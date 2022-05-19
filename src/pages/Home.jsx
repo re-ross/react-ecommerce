@@ -1,9 +1,10 @@
-import Navbar from "../components/Navbar";
-
+import { Announcement, Navbar, Slider } from "../components";
 const Home = () => {
   return (
     <div>
+      <Announcement />
       <Navbar />
+      <Slider />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from "@material-ui/core";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <Container>
       <Wrapper>
@@ -29,8 +29,6 @@ const Navbar = () => {
     </Container>
   );
 };
-
-export default Navbar;
 
 const Container = styled.div`
   height: 60px;
