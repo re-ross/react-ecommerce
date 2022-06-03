@@ -8,7 +8,7 @@ import {
   Room,
   Twitter,
 } from "@material-ui/icons";
-
+import { mobile } from "../responsive";
 export const Footer = () => {
   return (
     <Container>
@@ -40,8 +40,8 @@ export const Footer = () => {
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
+          <ListItem>Men's Fashion</ListItem>
+          <ListItem>Women's Fashion</ListItem>
           <ListItem>Accessories</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
@@ -71,6 +71,7 @@ export const Footer = () => {
 
 const Container = styled.div`
   display: flex;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 const Left = styled.div`
@@ -105,6 +106,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: "none" })}
 `;
 
 const Title = styled.h3`
@@ -128,6 +130,7 @@ const Right = styled.div`
   flex: 1;
   padding: 20px;
   background-color: "#fff8f8";
+  ${mobile({ backgroundColor: "fff8f8" })}
 `;
 
 const ContactItem = styled.div`

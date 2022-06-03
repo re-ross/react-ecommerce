@@ -1,7 +1,7 @@
-import { ProductSingle } from "./pages";
+import { Cart } from "./pages";
 
 const App = () => {
-  return <ProductSingle />;
+  return <Cart />;
 };
 
 export default App;
