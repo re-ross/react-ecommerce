@@ -1,7 +1,7 @@
-import { ProductList } from "./pages";
+import { ProductSingle } from "./pages";
 
 const App = () => {
-  return <ProductList />;
+  return <ProductSingle />;
 };
 
 export default App;
